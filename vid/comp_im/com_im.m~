@@ -1,0 +1,11 @@
+clear;
+close all; 
+clc;
+
+A =  imread('lena.bmp');
+Is  = zeros(size(A,1), size(A, 2), 3);
+Is(:, :, 3)=A;
+figure
+imshow(uint8(Is));
+figure
+imshow(A);
